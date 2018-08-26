@@ -21,16 +21,16 @@ class App extends Component {
         <Container className='FCC'>
           <CenterLine />
           <TextBox className='FCC'>
-            <Part1>NOAH</Part1>
+            <Part1 className='one-line'>NOAH</Part1>
             <Part2>
-              <p>NOTICE</p>
-              <p>OF</p>
-              <p>ANOTHER</p>
-              <p>HOPE</p>
+              <div className='one-line'>NOTICE</div>
+              <div className='one-line'>OF</div>
+              <div className='one-line'>ANOTHER</div>
+              <div className='one-line'>HOPE</div>
             </Part2>
             <Part3>
-              <p>A STORY TELLER</p>
-              <p>DESVELOP</p>
+              <div className='one-line'>A STORY TELLER</div>
+              <div className='one-line'>DESVELOP</div>
             </Part3>
           </TextBox>
         </Container>
@@ -52,7 +52,7 @@ const TextBox = styled.div`
   line-height: 72px;
   font-size: 64px;
   font-weight: bold;
-  & p {
+  & .one-line {
     width: 690px;
   }
   @media (max-width: 700px) {
@@ -60,13 +60,13 @@ const TextBox = styled.div`
     overflow: hidden;
     line-height: 57px;
     font-size: 48px;
-    & p {
+    & .one-line {
       width: 515px;
     }
   }
 `
 
-const Part1 = styled.p`
+const Part1 = styled.div`
   padding-left: 270px;
   margin-bottom: 80px;
   @media (max-width: 700px) {
@@ -75,7 +75,7 @@ const Part1 = styled.p`
   }
 `
 const Part2 = styled.div`
-  & p {
+  & .one-line {
     margin-bottom: -9px;
     &:first-child {
       padding-left: 270px;
@@ -92,7 +92,7 @@ const Part2 = styled.div`
   }
   margin-bottom: 80px;
   @media (max-width: 700px) {
-    & p {
+    & .one-line {
       margin-bottom: -8px;
       &:first-child {
         padding-left: 201px;
@@ -111,7 +111,7 @@ const Part2 = styled.div`
   }
 `
 const Part3 = styled.div`
-  & p {
+  & .one-line {
     margin-bottom: -9px;
     &:first-child {
       padding-left: 187px;
@@ -121,7 +121,7 @@ const Part3 = styled.div`
     }
   }
   @media (max-width: 700px) {
-    & p {
+    & .one-line {
       margin-bottom: -8px;
       &:first-child {
         padding-left: 139px;
