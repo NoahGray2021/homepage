@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 // Dependencies
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 // i18n
-import T from 'i18n-react'
+// import T from 'i18n-react'
 // import EN from './i18n/en.json'
 // import KO from './i18n/ko.json'
 
