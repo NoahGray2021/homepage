@@ -55,6 +55,7 @@ const TextBox = styled.div`
   & p {
     width: 690px;
     flex-shrink: 0;
+    flex-basis: 690px;
   }
   @media (max-width: 700px) {
     min-width: 515px;
@@ -62,8 +63,9 @@ const TextBox = styled.div`
     line-height: 57px;
     font-size: 48px;
     & p {
-      width: 515px;
+      min-width: 515px;
       flex-shrink: 0;
+      flex-basis: 515px;
     }
   }
 `
